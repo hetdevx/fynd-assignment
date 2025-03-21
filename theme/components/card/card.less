@@ -1,0 +1,277 @@
+// @import "../../styles/main.less";
+
+// .cardItem {
+//   position: relative;
+//   border-radius: @ImageRadius;
+//   height: 250px;
+//   margin-top: 25px;
+//   width: 100%;
+//   -webkit-mask-image: -webkit-radial-gradient(white, black); //safari fix
+
+//   overflow: hidden;
+//   &:hover {
+//     .cardImg {
+//       transform: scale(1.1);
+//     }
+//   }
+//   .cardImg {
+//     transition: 300ms transform cubic-bezier(0, 0, 0.2, 1);
+//   }
+//   .cardDesc {
+//     padding: 7px 12px;
+//     border-radius: @ButtonRadius;
+//     justify-content: center;
+//     background: @ThemeAccentL5;
+//     border: 1px solid @DividerStokes;
+//     position: absolute;
+//     bottom: 12px;
+//     left: 12px;
+//     right: 12px;
+//     @media @desktop {
+//       padding: 14px;
+//       bottom: 24px;
+//       left: 43px;
+//       right: 43px;
+//     }
+//     &:hover {
+//       background: @ThemeAccentL3;
+//     }
+//     .title {
+//       text-transform: capitalize;
+//       text-align: center;
+//       .text-line-clamp();
+//       color: @TextBody;
+//     }
+//   }
+//   &.BRANDS {
+//     .cardDesc {
+//       justify-content: center;
+//       .column-gap(16px);
+//       border-radius: @ButtonRadius;
+//       padding: 15px 27px 15px 15px;
+//       @media @desktop {
+//         bottom: 12px;
+//         left: 12px;
+//         right: 12px;
+//       }
+//       .title {
+//         color: @TextHeading;
+//         text-align: left;
+//         @media @tablet-strict {
+//           .text-line-clamp(2);
+//         }
+//       }
+//       .cardLogo {
+//         max-width: 33px;
+//         @media @mobile {
+//           max-width: 50px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .imgWrapper {
+//   position: static;
+//   &::before {
+//     content: unset;
+//   }
+//   & > * {
+//     all: revert;
+//   }
+// }
+
+@import "../../styles/main.less";
+
+.cardItem {
+  position: relative;
+  border-radius: @ImageRadius;
+  height: 250px;
+  margin-top: 25px;
+  width: 100%;
+  -webkit-mask-image: -webkit-radial-gradient(white, black); //safari fix
+  overflow: hidden;
+
+  &:hover {
+    .cardImg {
+      transform: scale(1.1);
+    }
+  }
+
+  &.PROMOTION {
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    .cardImg {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    &:hover {
+      .cardImg {
+        transform: none;
+      }
+    }
+  }
+
+  .cardImg {
+    transition: 300ms transform cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  .cardDesc {
+    padding: 7px 12px;
+    border-radius: @ButtonRadius;
+    justify-content: center;
+    background: @ThemeAccentL5;
+    border: 1px solid @DividerStokes;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    @media @desktop {
+      padding: 14px;
+      bottom: 24px;
+      left: 43px;
+      right: 43px;
+    }
+    &:hover {
+      background: @ThemeAccentL3;
+    }
+    .title {
+      text-transform: capitalize;
+      text-align: center;
+      .text-line-clamp();
+      color: @TextBody;
+    }
+  }
+
+  &.BRANDS {
+    .cardDesc {
+      justify-content: center;
+      .column-gap(16px);
+      border-radius: @ButtonRadius;
+      padding: 15px 27px 15px 15px;
+      @media @desktop {
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+      }
+      .title {
+        color: @TextHeading;
+        text-align: left;
+        @media @tablet-strict {
+          .text-line-clamp(2);
+        }
+      }
+      .cardLogo {
+        max-width: 33px;
+        @media @mobile {
+          max-width: 50px;
+        }
+      }
+    }
+  }
+}
+
+.imgWrapper {
+  position: static;
+  &::before {
+    content: unset;
+  }
+  & > * {
+    all: revert;
+  }
+}
+
+/* Promotion Card Styles */
+.promotionCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: @ImageRadius;
+  overflow: hidden;
+  background: #fff;
+}
+
+.promotionCardContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.promotionHeader {
+  margin-bottom: 12px;
+}
+
+.promotionTag {
+  display: inline-block;
+  background-color: #d32f2f;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.promotionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.promotionSubtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.promotionPricing {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.pricingContainer {
+  display: flex;
+  align-items: baseline;
+}
+
+.pricingPrefix {
+  font-size: 16px;
+  color: #666;
+  margin-right: 4px;
+}
+
+.currentPrice {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.originalPrice {
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+
+.selectButton {
+  background-color: #008f39;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #00732e;
+  }
+}

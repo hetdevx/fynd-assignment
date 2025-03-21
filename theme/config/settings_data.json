@@ -1,0 +1,1289 @@
+{
+  "list": [
+    {
+      "name": "Default",
+      "global_config": {
+        "static": {
+          "props": {
+            "colors": {
+              "primary_color": "#7043f7",
+              "secondary_color": "#02d1cb",
+              "accent_color": "#FFFFFF",
+              "link_color": "#7043f7",
+              "button_secondary_color": "#000000",
+              "bg_color": "#F8F8F8"
+            },
+            "auth": {
+              "show_header_auth": true,
+              "show_footer_auth": true
+            },
+            "palette": {
+              "general_setting": {
+                "theme": {
+                  "page_background": "#ffffff",
+                  "theme_accent": "#eeeded"
+                },
+                "text": {
+                  "text_heading": "#585555",
+                  "text_body": "#010e15",
+                  "text_label": "#494e50",
+                  "text_secondary": "#3e4447"
+                },
+                "button": {
+                  "button_primary": "#5e5a5a",
+                  "button_secondary": "#ffffff",
+                  "button_link": "#552531"
+                },
+                "sale_discount": {
+                  "sale_badge_background": "#f1faee",
+                  "sale_badge_text": "#f7f7f7",
+                  "sale_discount_text": "#1867b0",
+                  "sale_timer": "#231f20"
+                },
+                "header": {
+                  "header_background": "#ffffff",
+                  "header_nav": "#000000",
+                  "header_icon": "#000000"
+                },
+                "footer": {
+                  "footer_background": "#efeae9",
+                  "footer_bottom_background": "#efeae9",
+                  "footer_heading_text": "#fe0101",
+                  "footer_body_text": "#050605",
+                  "footer_icon": "#cae30d"
+                }
+              },
+              "advance_setting": {
+                "overlay_popup": {
+                  "dialog_backgroung": "#ffffff",
+                  "overlay": "#716f6f"
+                },
+                "divider_stroke_highlight": {
+                  "divider_strokes": "#efeae9",
+                  "highlight": "#dfd2d4"
+                },
+                "user_alerts": {
+                  "success_background": "#e9f9ed",
+                  "success_text": "#1C958F",
+                  "error_background": "#fff5f5",
+                  "error_text": "#B24141",
+                  "info_background": "#fff359",
+                  "info_text": "#D28F51"
+                }
+              }
+            },
+            "extension": {
+              "header_top": [],
+              "header_bottom": [],
+              "footer_top": [],
+              "footer_bottom": []
+            },
+            "bindings": {
+              "header_top": [],
+              "header_bottom": [],
+              "footer_top": [],
+              "footer_bottom": []
+            },
+            "order_tracking": {
+              "show_header": true,
+              "show_footer": true
+            }
+          }
+        },
+        "custom": {
+          "props": {
+            "header_icon_color": "#000000",
+            "menu_position": "bottom",
+            "artwork": "https://cdn.pixelbin.io/v2/falling-surf-7c8bb8/fyndnp/wrkr/addsale/company/11197/applications/60b8c8a67b0862f85a672571/theme/pictures/free/original/theme-image-1668580342482.jpeg",
+            "enable_artwork": false,
+            "footer_bg_color": "#792a2a",
+            "footer_text_color": "#9f8484",
+            "footer_border_color": "#a6e7bf",
+            "footer_nav_hover_color": "#59e8b9",
+            "menu_layout_desktop": "layout_3",
+            "logo": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5178/applications/671619856d07006ffea459c6/theme/pictures/free/original/theme-image-1729670762584.png",
+            "logo_width": 774,
+            "footer_description": "Welcome to our store! This section is where you can include important links and details about your store. Provide a brief overview of your brand's history, contact information, and key policies to enhance your customers' experience and keep them informed.",
+            "logo_menu_alignment": "layout_4",
+            "header_layout": "double",
+            "section_margin_top": 89,
+            "font_header": {
+              "variants": {
+                "light": {
+                  "name": "300",
+                  "file": "https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32KxfXNigDp6_cOyA.ttf"
+                },
+                "regular": {
+                  "name": "regular",
+                  "file": "https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXNigDp6_cOyA.ttf"
+                },
+                "medium": {
+                  "name": "500",
+                  "file": "https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K3vXNigDp6_cOyA.ttf"
+                },
+                "semi_bold": {
+                  "name": "600",
+                  "file": "https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQNigDp6_cOyA.ttf"
+                },
+                "bold": {
+                  "name": "700",
+                  "file": "https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QNigDp6_cOyA.ttf"
+                }
+              },
+              "family": "Work Sans"
+            },
+            "font_body": {
+              "variants": {
+                "light": {
+                  "name": "300",
+                  "file": "https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32KxfXNigDp6_cOyA.ttf"
+                },
+                "regular": {
+                  "name": "regular",
+                  "file": "https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXNigDp6_cOyA.ttf"
+                },
+                "medium": {
+                  "name": "500",
+                  "file": "https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K3vXNigDp6_cOyA.ttf"
+                },
+                "semi_bold": {
+                  "name": "600",
+                  "file": "https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQNigDp6_cOyA.ttf"
+                },
+                "bold": {
+                  "name": "700",
+                  "file": "https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QNigDp6_cOyA.ttf"
+                }
+              },
+              "family": "Work Sans"
+            },
+            "section_margin_bottom": 18,
+            "button_border_radius": 11,
+            "product_img_width": "300",
+            "product_img_height": "1000",
+            "image_border_radius": 12,
+            "img_container_bg": "#EAEAEA",
+            "payments_logo": "",
+            "custom_button_link": "",
+            "button_options": "addtocart_buynow",
+            "custom_button_text": "Enquire Now",
+            "show_price": true,
+            "custom_button_icon": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyndnp/wrkr/addsale/company/4108/applications/65dec2e1145986b98e7c377d/theme/pictures/free/original/theme-image-1710322198761.png",
+            "img_fill": true,
+            "disable_cart": false,
+            "is_delivery_minutes": false,
+            "is_delivery_day": true,
+            "is_hyperlocal": false
+          }
+        }
+      },
+      "page": [
+        {
+          "page": "product-description",
+          "settings": {
+            "props": {
+              "reviews": false,
+              "add_to_compare": true,
+              "product_request": false,
+              "store_selection": true,
+              "compare_products": false,
+              "variants": true,
+              "ratings": false,
+              "similar_products": true,
+              "bulk_prices": false,
+              "badge_url_1": "",
+              "badge_url_2": "",
+              "badge_url_3": "",
+              "badge_url_4": "",
+              "badge_url_5": "",
+              "show_products_breadcrumb": true,
+              "show_category_breadcrumb": true,
+              "show_brand_breadcrumb": true,
+              "mrp_label": true,
+              "tax_label": "Price inclusive of all tax",
+              "item_code": true,
+              "product_details_bullets": true,
+              "show_size_guide": true,
+              "show_offers": true,
+              "hide_single_size": false,
+              "badge_logo_1": "",
+              "badge_label_1": "",
+              "badge_label_2": "",
+              "badge_label_3": "",
+              "badge_label_4": "",
+              "badge_label_5": "",
+              "badge_logo_5": "",
+              "badge_logo_3": "",
+              "size_selection_style": "dropdown",
+              "variant_position": "accordion",
+              "mandatory_pincode": true,
+              "preselect_size": true,
+              "badge_logo_4": "",
+              "badge_logo_2": "",
+              "show_seller": true,
+              "return": true,
+              "seller_store_selection": false
+            }
+          }
+        },
+        {
+          "page": "cart-landing",
+          "settings": {
+            "props": {
+              "show_info_message": true,
+              "gst": false,
+              "staff_selection": true,
+              "enable_customer": false,
+              "enable_guest": false
+            }
+          }
+        },
+        {
+          "page": "brands",
+          "settings": {
+            "props": {
+              "title": "",
+              "description": "",
+              "logo_only": false,
+              "infinite_scroll": true,
+              "back_top": true
+            }
+          }
+        },
+        {
+          "page": "product-listing",
+          "settings": {
+            "props": {
+              "hide_brand": false,
+              "infinite_scroll": false,
+              "product_number": true,
+              "loading_options": "pagination",
+              "back_top": true,
+              "in_new_tab": false,
+              "grid_desktop": "4",
+              "grid_tablet": "3",
+              "grid_mob": "2",
+              "description": "",
+              "banner_link": "",
+              "show_add_to_cart": true
+            }
+          }
+        },
+        {
+          "page": "collection-listing",
+          "settings": {
+            "props": {
+              "product_number": true,
+              "loading_options": "pagination",
+              "back_top": true,
+              "in_new_tab": true,
+              "hide_brand": false,
+              "grid_desktop": "4",
+              "grid_tablet": "3",
+              "grid_mob": "2"
+            }
+          }
+        },
+        {
+          "page": "categories",
+          "settings": {
+            "props": {
+              "heading": "",
+              "description": "",
+              "back_top": true
+            }
+          }
+        },
+        {
+          "page": "home",
+          "settings": {
+            "props": {
+              "code": ""
+            }
+          }
+        },
+        {
+          "page": "login",
+          "settings": {
+            "props": {
+              "image_banner": "",
+              "image_layout": "no_banner"
+            }
+          }
+        },
+        {
+          "page": "collections",
+          "settings": {
+            "props": {
+              "title": "",
+              "description": "",
+              "infinite_scroll": true,
+              "back_top": true
+            }
+          }
+        },
+        {
+          "page": "blog",
+          "settings": {
+            "props": {
+              "button_link": "",
+              "show_blog_slide_show": true,
+              "btn_text": "Read More",
+              "show_tags": true,
+              "show_search": true,
+              "show_recent_blog": true,
+              "show_top_blog": true,
+              "show_filters": true,
+              "loading_options": "pagination",
+              "title": "The Unparalleled Shopping Experience",
+              "description": "Everything you need for that ultimate stylish wardrobe, Fynd has got it!",
+              "button_text": "Shop Now"
+            }
+          }
+        },
+        {
+          "page": "contact-us",
+          "settings": {
+            "props": {
+              "align_image": "right",
+              "show_address": true,
+              "show_phone": true,
+              "show_email": true,
+              "show_icons": true,
+              "show_working_hours": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dark",
+      "global_config": {
+        "static": {
+          "props": {
+            "colors": {
+              "primary_color": "#7043f7",
+              "secondary_color": "#02d1cb",
+              "accent_color": "#FFFFFF",
+              "link_color": "#7043f7",
+              "button_secondary_color": "#000000",
+              "bg_color": "#F8F8F8"
+            },
+            "auth": {
+              "show_header_auth": false,
+              "show_footer_auth": false
+            },
+            "palette": {
+              "general_setting": {
+                "theme": {
+                  "page_background": "#F8F8F8",
+                  "theme_accent": "#FFFFFF"
+                },
+                "text": {
+                  "text_heading": "#02d1cb",
+                  "text_body": "#3C3131",
+                  "text_label": "#7D7676",
+                  "text_secondary": "#9C9C9C"
+                },
+                "button": {
+                  "button_primary": "#7043f7",
+                  "button_secondary": "#000000",
+                  "button_link": "#7043f7"
+                },
+                "sale_discount": {
+                  "sale_badge_background": "#FFFFFF",
+                  "sale_badge_text": "#1C958F",
+                  "sale_discount_text": "#1C958F",
+                  "sale_timer": "#994449"
+                },
+                "header": {
+                  "header_background": "#F3F3ED",
+                  "header_nav": "#261A1A",
+                  "header_icon": "#261A1A"
+                },
+                "footer": {
+                  "footer_background": "#2C231E",
+                  "footer_bottom_background": "#231812",
+                  "footer_heading_text": "#FFFFFF",
+                  "footer_body_text": "#FFFFFF",
+                  "footer_icon": "#FFFFFF"
+                }
+              },
+              "advance_setting": {
+                "overlay_popup": {
+                  "dialog_backgroung": "#FFFFFF",
+                  "overlay": "#14130E"
+                },
+                "divider_stroke_highlight": {
+                  "divider_strokes": "#D4D1D1",
+                  "highlight": "#EDECE9"
+                },
+                "user_alerts": {
+                  "success_background": "#C2DBC9",
+                  "success_text": "#1C958F",
+                  "error_background": "#E6D5D5",
+                  "error_text": "#B24141",
+                  "info_background": "#EBD3BC",
+                  "info_text": "#D28F51"
+                }
+              }
+            },
+            "extension": {
+              "header_top": [],
+              "header_bottom": [],
+              "footer_top": [],
+              "footer_bottom": []
+            },
+            "bindings": {
+              "header_top": [],
+              "header_bottom": [],
+              "footer_top": [],
+              "footer_bottom": []
+            },
+            "order_tracking": {
+              "show_header": true,
+              "show_footer": true
+            }
+          }
+        },
+        "custom": {
+          "props": {}
+        }
+      },
+      "page": [
+        {
+          "page": "product-description",
+          "settings": {
+            "props": {
+              "reviews": false,
+              "add_to_compare": false,
+              "product_request": false,
+              "store_selection": true,
+              "compare_products": false,
+              "variants": true,
+              "ratings": false,
+              "similar_products": true,
+              "bulk_prices": false
+            }
+          }
+        },
+        {
+          "page": "cart-landing",
+          "settings": {
+            "props": {
+              "show_info_message": true,
+              "gst": false,
+              "staff_selection": false,
+              "enable_customer": false,
+              "enable_guest": false
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "current": "Default",
+  "preset": {
+    "pages": [
+      {
+        "sections": [
+          {
+            "blocks": [
+              {
+                "type": "hotspot_desktop",
+                "name": "Hotspot Desktop",
+                "props": {
+                  "pointer_type": {
+                    "type": "select",
+                    "value": "pointer"
+                  },
+                  "edit_visible": {
+                    "type": "checkbox",
+                    "value": true
+                  },
+                  "x_position": {
+                    "type": "range",
+                    "value": 50
+                  },
+                  "y_position": {
+                    "type": "range",
+                    "value": 50
+                  },
+                  "box_width": {
+                    "type": "range",
+                    "value": 15
+                  },
+                  "box_height": {
+                    "type": "range",
+                    "value": 15
+                  },
+                  "hotspot_image": {
+                    "type": "image_picker",
+                    "value": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5178/applications/668765e1c984016d78222a21/theme/pictures/free/original/theme-image-1725613920549.png"
+                  },
+                  "hotspot_header": {
+                    "type": "text",
+                    "value": "Header"
+                  },
+                  "hotspot_description": {
+                    "type": "textarea",
+                    "value": "Description"
+                  },
+                  "hotspot_link_text": {
+                    "type": "text",
+                    "value": "Link"
+                  },
+                  "redirect_link": {
+                    "type": "url",
+                    "value": "https://glam.fynd.io/products"
+                  }
+                }
+              },
+              {
+                "type": "hotspot_mobile",
+                "name": "Hotspot Mobile",
+                "props": {
+                  "pointer_type": {
+                    "type": "select",
+                    "value": "pointer"
+                  },
+                  "edit_visible": {
+                    "type": "checkbox",
+                    "value": true
+                  },
+                  "x_position": {
+                    "type": "range",
+                    "value": 50
+                  },
+                  "y_position": {
+                    "type": "range",
+                    "value": 50
+                  },
+                  "box_width": {
+                    "type": "range",
+                    "value": 15
+                  },
+                  "box_height": {
+                    "type": "range",
+                    "value": 15
+                  },
+                  "hotspot_image": {
+                    "type": "image_picker",
+                    "value": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5178/applications/668765e1c984016d78222a21/theme/pictures/free/original/theme-image-1727341922988.png"
+                  },
+                  "hotspot_header": {
+                    "type": "text",
+                    "value": "Header"
+                  },
+                  "hotspot_description": {
+                    "type": "textarea",
+                    "value": "Description"
+                  },
+                  "hotspot_link_text": {
+                    "type": "text",
+                    "value": "Link"
+                  },
+                  "redirect_link": {
+                    "type": "url",
+                    "value": "https://glam.fynd.io/products"
+                  }
+                }
+              }
+            ],
+            "label": "Hero Image",
+            "name": "hero-image",
+            "predicate": {
+              "route": {
+                "exact_url": "",
+                "query": null,
+                "selected": "none"
+              },
+              "screen": {
+                "desktop": true,
+                "mobile": true,
+                "tablet": true
+              },
+              "user": {
+                "anonymous": true,
+                "authenticated": true
+              }
+            },
+            "preset": {},
+            "props": {
+              "heading": {
+                "type": "text",
+                "value": "Welcome to Your New Store"
+              },
+              "description": {
+                "type": "text",
+                "value": "Begin your journey by adding unique images and banners. This is your chance to create a captivating first impression. Customize it to reflect your brand's personality and style!"
+              },
+              "overlay_option": {
+                "value": "no_overlay",
+                "type": "select"
+              },
+              "button_text": {
+                "type": "text",
+                "value": "EXPLORE NOW"
+              },
+              "button_link": {
+                "type": "url",
+                "value": "https://www.google.com"
+              },
+              "invert_button_color": {
+                "type": "checkbox",
+                "value": false
+              },
+              "desktop_banner": {
+                "type": "image_picker",
+                "value": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5178/applications/64a5852e8c9c824f3f71bfd6/theme/pictures/free/original/theme-image-1706877310472.jpeg"
+              },
+              "text_placement_desktop": {
+                "type": "select",
+                "value": "top_left"
+              },
+              "text_alignment_desktop": {
+                "type": "select",
+                "value": "left"
+              },
+              "mobile_banner": {
+                "type": "image_picker",
+                "value": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5178/applications/64a5852e8c9c824f3f71bfd6/theme/pictures/free/original/theme-image-1706877310472.jpeg"
+              },
+              "text_placement_mobile": {
+                "value": "top_left",
+                "type": "select"
+              },
+              "text_alignment_mobile": {
+                "value": "left",
+                "type": "select"
+              }
+            }
+          },
+          {
+            "blocks": [
+              {
+                "type": "gallery",
+                "name": "Image card",
+                "props": {
+                  "image": {
+                    "type": "image_picker",
+                    "value": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/2031/TLsyapymK2-image-(4).png"
+                  },
+                  "link": {
+                    "type": "url",
+                    "value": ""
+                  }
+                }
+              },
+              {
+                "type": "gallery",
+                "name": "Image card",
+                "props": {
+                  "image": {
+                    "type": "image_picker",
+                    "value": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/2023/AsY7QHVFCM-image-(4).png"
+                  },
+                  "link": {
+                    "type": "url",
+                    "value": ""
+                  }
+                }
+              },
+              {
+                "type": "gallery",
+                "name": "Image card",
+                "props": {
+                  "image": {
+                    "type": "image_picker",
+                    "value": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/2034/4hK785hTJC-image-(4).png"
+                  },
+                  "link": {
+                    "type": "url",
+                    "value": ""
+                  }
+                }
+              },
+              {
+                "type": "gallery",
+                "name": "Image card",
+                "props": {
+                  "image": {
+                    "type": "image_picker",
+                    "value": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/2032/p2s72qBwka-image-(4).png"
+                  },
+                  "link": {
+                    "type": "url",
+                    "value": ""
+                  }
+                }
+              }
+            ],
+            "label": "Image Gallery",
+            "name": "image-gallery",
+            "predicate": {
+              "route": {
+                "exact_url": "",
+                "query": null,
+                "selected": "none"
+              },
+              "screen": {
+                "desktop": true,
+                "mobile": true,
+                "tablet": true
+              },
+              "user": {
+                "anonymous": true,
+                "authenticated": true
+              }
+            },
+            "preset": {},
+            "props": {
+              "heading": {
+                "type": "text",
+                "value": "New Arrivals"
+              },
+              "description": {
+                "type": "text",
+                "value": "Showcase your top collections here! Whether it's new arrivals, trending items, or special promotions, use this space to draw attention to what's most important in your store."
+              },
+              "button_text": {
+                "type": "text",
+                "value": "View all"
+              },
+              "img_fill": {
+                "type": "checkbox",
+                "value": true
+              },
+              "desktop_layout": {
+                "type": "select",
+                "value": "banner_horizontal_scroll"
+              },
+              "mobile_layout": {
+                "type": "select",
+                "value": "horizontal"
+              }
+            }
+          },
+          {
+            "blocks": [],
+            "label": "Categories Listing",
+            "name": "categories-listing",
+            "predicate": {
+              "route": {
+                "exact_url": "",
+                "query": null,
+                "selected": "none"
+              },
+              "screen": {
+                "desktop": true,
+                "mobile": true,
+                "tablet": true
+              },
+              "user": {
+                "anonymous": true,
+                "authenticated": true
+              }
+            },
+            "preset": {},
+            "props": {
+              "title": {
+                "type": "text",
+                "value": "A True Style"
+              },
+              "cta_text": {
+                "type": "text",
+                "value": "Be exclusive, Be Divine, Be yourself"
+              },
+              "img_fill": {
+                "type": "checkbox",
+                "value": true
+              },
+              "desktop_layout": {
+                "type": "select",
+                "value": "horizontal"
+              },
+              "mobile_layout": {
+                "type": "select",
+                "value": "grid"
+              }
+            }
+          },
+          {
+            "blocks": [
+              {
+                "type": "testimonial",
+                "name": "Testimonial",
+                "props": {
+                  "author_image": {
+                    "type": "image_picker",
+                    "value": ""
+                  },
+                  "author_testimonial": {
+                    "type": "textarea",
+                    "value": "Thank you for the excellent sales support and for contributing to a more humane and sustainable world. The products are of great quality, and it's wonderful to support a brand that cares about ethics and sustainability."
+                  },
+                  "author_name": {
+                    "type": "text",
+                    "value": "Mark A"
+                  },
+                  "author_description": {
+                    "type": "text",
+                    "value": "Los Angeles, CA"
+                  }
+                }
+              },
+              {
+                "type": "testimonial",
+                "name": "Testimonial",
+                "props": {
+                  "author_image": {
+                    "type": "image_picker",
+                    "value": ""
+                  },
+                  "author_testimonial": {
+                    "type": "textarea",
+                    "value": "Thank you for the excellent sales support and for contributing to a more humane and sustainable world. The products are of great quality, and it's wonderful to support a brand that cares about ethics and sustainability."
+                  },
+                  "author_name": {
+                    "type": "text",
+                    "value": "Mark A"
+                  },
+                  "author_description": {
+                    "type": "text",
+                    "value": "Los Angeles, CA"
+                  }
+                }
+              },
+              {
+                "type": "testimonial",
+                "name": "Testimonial",
+                "props": {
+                  "author_image": {
+                    "type": "image_picker",
+                    "value": ""
+                  },
+                  "author_testimonial": {
+                    "type": "textarea",
+                    "value": "Thank you for the excellent sales support and for contributing to a more humane and sustainable world. The products are of great quality, and it's wonderful to support a brand that cares about ethics and sustainability."
+                  },
+                  "author_name": {
+                    "type": "text",
+                    "value": "Mark A"
+                  },
+                  "author_description": {
+                    "type": "text",
+                    "value": "Los Angeles, CA"
+                  }
+                }
+              },
+              {
+                "type": "testimonial",
+                "name": "Testimonial",
+                "props": {
+                  "author_image": {
+                    "type": "image_picker",
+                    "value": ""
+                  },
+                  "author_testimonial": {
+                    "type": "textarea",
+                    "value": "Thank you for the excellent sales support and for contributing to a more humane and sustainable world. The products are of great quality, and it's wonderful to support a brand that cares about ethics and sustainability."
+                  },
+                  "author_name": {
+                    "type": "text",
+                    "value": "Mark A"
+                  },
+                  "author_description": {
+                    "type": "text",
+                    "value": "Los Angeles, CA"
+                  }
+                }
+              }
+            ],
+            "label": "Testimonial",
+            "name": "testimonials",
+            "predicate": {
+              "route": {
+                "exact_url": "",
+                "query": null,
+                "selected": "none"
+              },
+              "screen": {
+                "desktop": true,
+                "mobile": true,
+                "tablet": true
+              },
+              "user": {
+                "anonymous": true,
+                "authenticated": true
+              }
+            },
+            "preset": {
+              "blocks": [
+                {
+                  "name": "Testimonial",
+                  "props": {
+                    "author_image": {
+                      "type": "image_picker",
+                      "value": ""
+                    },
+                    "author_testimonial": {
+                      "type": "textarea",
+                      "value": "Thank you for the excellent sales support and for contributing to a more humane and sustainable world. The products are of great quality, and it's wonderful to support a brand that cares about ethics and sustainability."
+                    },
+                    "author_name": {
+                      "type": "text",
+                      "value": "Mark A"
+                    },
+                    "author_description": {
+                      "type": "text",
+                      "value": "Los Angeles, CA"
+                    }
+                  }
+                },
+                {
+                  "name": "Testimonial",
+                  "props": {
+                    "author_image": {
+                      "type": "image_picker",
+                      "value": ""
+                    },
+                    "author_testimonial": {
+                      "type": "textarea",
+                      "value": "Thank you for the excellent sales support and for contributing to a more humane and sustainable world. The products are of great quality, and it's wonderful to support a brand that cares about ethics and sustainability."
+                    },
+                    "author_name": {
+                      "type": "text",
+                      "value": "Mark A"
+                    },
+                    "author_description": {
+                      "type": "text",
+                      "value": "Los Angeles, CA"
+                    }
+                  }
+                }
+              ]
+            },
+            "props": {
+              "title": {
+                "value": "What People Are Saying About Us ",
+                "type": "text"
+              },
+              "autoplay": {
+                "value": false,
+                "type": "checkbox"
+              },
+              "slide_interval": {
+                "value": 2,
+                "type": "range"
+              }
+            }
+          },
+          {
+            "blocks": [],
+            "label": "Featured Products",
+            "name": "featured-products",
+            "predicate": {
+              "route": {
+                "exact_url": "",
+                "query": null,
+                "selected": "none"
+              },
+              "screen": {
+                "desktop": true,
+                "mobile": true,
+                "tablet": true
+              },
+              "user": {
+                "anonymous": true,
+                "authenticated": true
+              }
+            },
+            "preset": {},
+            "props": {
+              "product": {
+                "type": "product"
+              },
+              "Heading": {
+                "type": "text",
+                "value": "Our Featured Product"
+              },
+              "description": {
+                "value": "",
+                "type": "text"
+              },
+              "show_seller": {
+                "value": true,
+                "type": "checkbox"
+              },
+              "show_size_guide": {
+                "value": true,
+                "type": "checkbox"
+              },
+              "size_selection_style": {
+                "type": "radio",
+                "value": "dropdown"
+              },
+              "hide_single_size": {
+                "value": false,
+                "type": "checkbox"
+              },
+              "tax_label": {
+                "value": "Price inclusive of all tax",
+                "type": "text"
+              }
+            }
+          },
+          {
+            "blocks": [],
+            "label": "Media with Text",
+            "name": "media-with-text",
+            "predicate": {
+              "route": {
+                "exact_url": "",
+                "query": null,
+                "selected": "none"
+              },
+              "screen": {
+                "desktop": true,
+                "mobile": true,
+                "tablet": true
+              },
+              "user": {
+                "anonymous": true,
+                "authenticated": true
+              }
+            },
+            "preset": {},
+            "props": {
+              "image_desktop": {
+                "type": "image_picker",
+                "value": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5178/applications/64a3fad6b5bf42ceeae77e6a/theme/pictures/free/original/theme-image-1702633093067.png"
+              },
+              "image_mobile": {
+                "type": "image_picker",
+                "value": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5178/applications/64a3fad6b5bf42ceeae77e6a/theme/pictures/free/original/theme-image-1702633093067.png"
+              },
+              "banner_link": {
+                "type": "url",
+                "value": "https://glam.fynd.io/products"
+              },
+              "title": {
+                "type": "text",
+                "value": "Shop your style"
+              },
+              "description": {
+                "type": "textarea",
+                "value": "Shop the latest collections now."
+              },
+              "button_text": {
+                "type": "text",
+                "value": "View Products"
+              },
+              "align_text_desktop": {
+                "value": false,
+                "type": "checkbox"
+              }
+            }
+          }
+        ],
+        "value": "home"
+      },
+      {
+        "sections": [
+          {
+            "blocks": [
+              {
+              "type": "product_name",
+              "name": "Product Name",
+              "props" : {
+                "show_brand":{
+                  "type": "checkbox",
+                  "value":true
+                }
+              }
+            },
+            {
+              "type": "product_price",
+              "name": "Product Price",
+              "props" : {
+                "mrp_label":{
+                  "type": "checkbox",
+                  "value":true
+                }
+              }
+            },
+             {
+              "type": "size_wrapper",
+              "name": "Size Container with Action Buttons",
+              "props": {
+                "hide_single_size": {
+                  "type": "checkbox",
+                  "default": false
+                },
+                "preselect_size": {
+                  "type": "checkbox",
+                  "default": true
+                },
+                "size_selection_style": {
+                  "type": "radio",
+                  "default": "dropdown",
+                  "options": [
+                    {
+                      "value": "dropdown",
+                      "text": "Dropdown style"
+                    },
+                    {
+                      "value": "block",
+                      "text": "Block style"
+                    }
+                  ]
+                }
+              }
+            }
+            ],
+            "label": "Product Description",
+            "name": "product-description",
+            "predicate": {
+              "route": {
+                "exact_url": "",
+                "query": null,
+                "selected": "none"
+              },
+              "screen": {
+                "desktop": true,
+                "mobile": true,
+                "tablet": true
+              },
+              "user": {
+                "anonymous": true,
+                "authenticated": true
+              }
+            },
+            "preset": {},
+            "props": {}
+          }
+        ],
+        "value": "product-description"
+      },
+      {
+        "sections": [
+          {
+            "blocks": [
+              {
+          "type": "coupon",
+          "name": "Coupon",
+         "props": {}
+        },
+        {
+          "type": "comment",
+          "name": "Comment",
+         "props": {}
+        },
+        {
+          "type": "gst_card",
+          "name": "GST Card",
+         "props": {}
+        },
+        {
+          "type": "price_breakup",
+          "name": "Price Breakup",
+         "props": {}
+        },
+        {
+          "type": "checkout_buttons",
+          "name": "Log-In/Checkout Buttons",
+          "props": {}
+        },
+        {
+          "type": "share_cart",
+          "name": "Share Cart",
+          "props": {}
+    }
+  ],
+            "label": "Cart Landing",
+            "name": "cart-landing",
+            "predicate": {
+              "route": {
+                "exact_url": "",
+                "query": null,
+                "selected": "none"
+              },
+              "screen": {
+                "desktop": true,
+                "mobile": true,
+                "tablet": true
+              },
+              "user": {
+                "anonymous": true,
+                "authenticated": true
+              }
+            },
+            "preset": {},
+            "props": {}
+          }
+        ],
+        "value": "cart-landing"
+      },
+      {
+        "sections" :[
+          {
+            "blocks": [
+                {
+                  "type": "order_header",
+                  "name": "Order Header",
+                  "props": {}
+                },
+                {
+                  "type": "shipment_items",
+                  "name": "Shipment Items",
+                   "props": {}
+                },
+                {
+                  "type": "shipment_tracking",
+                  "name": "Shipment Tracking",
+                  "props": {}
+                },
+                {
+                  "type": "shipment_address",
+                  "name": "Shipment Address",
+                  "props": {}
+                },
+                {
+                  "type": "payment_details_card",
+                  "name": "Payment Details Card",
+                  "props": {}
+                },
+                {
+                  "type": "shipment_breakup",
+                  "name": "Shipment Breakup",
+                  "props": {}
+                }
+            ],
+            "label": "Order Details",
+            "name": "order-details",
+            "predicate": {
+              "route": {
+                "exact_url": "",
+                "query": null,
+                "selected": "none"
+              },
+              "screen": {
+                "desktop": true,
+                "mobile": true,
+                "tablet": true
+              },
+              "user": {
+                "anonymous": true,
+                "authenticated": true
+              }
+            },
+            "preset": {},
+            "props": {}
+          }
+        ],
+        "value": "shipment-details"
+      }
+    ]
+  }
+}
