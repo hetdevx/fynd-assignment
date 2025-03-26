@@ -31,12 +31,14 @@ const FyImage = ({
   globalConfig,
   defer = true,
   isImageCover = false,
+  applyCss = false,
 }) => {
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isIntersecting, setIsIntersecting] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const imgWrapperRef = useRef(null);
+
   // const THEME = useGlobalStore(fpi.getters.THEME);
   // const globalConfig = THEME?.config?.list[0]?.global_config?.custom?.props;
   const ref = React.useRef(null);
@@ -197,7 +199,7 @@ const FyImage = ({
         } // Animate to visible and position in place
         transition={{ duration: 0.8 }} // Duration of the animation
       >
-        <picture>
+        <picture className={applyCss ? styles.applyCssPicture : ""}>
           {getSources().map((source, index) => (
             <source
               key={index}
@@ -207,7 +209,7 @@ const FyImage = ({
             />
           ))}
           <img
-            className={styles.fyImg}
+            className={`${styles.fyImg} ${applyCss ? styles.applyCssImage : ""}`}
             style={{
               display: !showSkeleton || !isLoading ? "block" : "none",
             }}

@@ -49,7 +49,16 @@ function QuantityCtrl({ currquantity, incDecQuantity, changeQty }) {
   };
 
   return (
-    <div className={`${styles.qtyControl}`}>
+    <div
+      className={`${styles.qtyControl}`}
+      style={{
+        width: "100%",
+        paddingTop: "5px",
+        paddingBottom: "5px",
+        paddingRight: "10px",
+        paddingLeft: "10px",
+      }}
+    >
       <button
         type="button"
         aria-label="Dec Quantity"

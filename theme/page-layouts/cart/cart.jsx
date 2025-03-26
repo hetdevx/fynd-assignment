@@ -31,7 +31,7 @@ function Cart({ fpi, globalConfig, sections }) {
 
   return (
     <div className={`${styles.cart} basePageContainer margin0auto`}>
-      <CartNew
+      {/* <CartNew
         {...restProps}
         cartData={cartData}
         currencySymbol={currencySymbol}
@@ -48,7 +48,7 @@ function Cart({ fpi, globalConfig, sections }) {
         sections={sections}
         fpi={fpi}
         globalConfig={globalConfig}
-      />
+      /> */}
     </div>
   );
 }

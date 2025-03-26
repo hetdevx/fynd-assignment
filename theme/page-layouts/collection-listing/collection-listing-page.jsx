@@ -1,15 +1,19 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ProductListing from "@gofynd/theme-template/pages/product-listing/product-listing";
-import "@gofynd/theme-template/pages/product-listing/index.css";
-import styles from "./collection-listing-page.less";
+// import ProductListing from "@gofynd/theme-template/pages/product-listing/product-listing";
+// import "@gofynd/theme-template/pages/product-listing/index.css";
+import "./collection-listing-page.less";
 import useCollectionListing from "./useCollectionListing";
 import { getHelmet } from "../../providers/global-provider";
+import ProductListing from "../../components/product-listing/product-listing";
+import "../../styles/product-listing.less";
 
 const CollectionListingPage = ({ fpi }) => {
   const params = useParams();
   const slug = params?.slug;
   const listingProps = useCollectionListing({ fpi, slug });
+
+  // console.log("listingProps", listingProps);
 
   const { title, description } = listingProps;
   return (

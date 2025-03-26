@@ -35,7 +35,7 @@ const useProductDescription = (fpi, slug, props, blockProps) => {
     fpi?.getters?.CUSTOM_VALUE
   );
   const { globalConfig } = useThemeConfig({ fpi });
-
+  // console.log("PRODUCT", PRODUCT);
   let sellerDetails = useGlobalStore(fpi.getters.i18N_DETAILS);
   if (typeof sellerDetails === "string" && sellerDetails !== "") {
     sellerDetails = JSON.parse(sellerDetails);

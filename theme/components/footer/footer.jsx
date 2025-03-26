@@ -8,6 +8,7 @@ import fallbackLogo from "../../assets/images/logo.png";
 import IntersectionObserverComponent from "../intersection-observer/intersection-observer";
 import SocailMedia from "../socail-media/socail-media";
 import { useThemeConfig } from "../../helper/hooks";
+import BottomNavigation from "../bottom-navbar/bottom-navbar";
 
 function Footer({ fpi }) {
   const { globalConfig, FooterNavigation, contactInfo, supportInfo } =
@@ -209,7 +210,7 @@ function Footer({ fpi }) {
     //     </div>
     //   </>
     // </footer>
-    <></>
+    <BottomNavigation />
   );
 }
 

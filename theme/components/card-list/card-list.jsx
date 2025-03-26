@@ -4,8 +4,10 @@ import Card from "../card/card";
 import styles from "./card-list.less";
 
 function CardList({ cardList, cardType, showOnlyLogo, globalConfig }) {
+  // console.log('cardList', cardList)
   return (
     <div className={styles.grpListWrap}>
+      {" "}
       <div
         className={`${styles.groupCards} ${
           showOnlyLogo ? styles.logoOnlyGroup : ""

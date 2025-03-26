@@ -1,0 +1,372 @@
+// cart-preview-modal.less
+
+// Main container styles
+.cartModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+// Cart modal
+.cartModal {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px;
+  position: absolute;
+  margin-bottom: 20px;
+  bottom: 0;
+  // For the item summary display as shown in the image
+  &.itemSummary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+
+// Empty cart styling
+.emptyCart {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyCartMessage {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin: 20px 0;
+}
+
+// Connector triangle for the modal
+.connector {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+
+// Container for cart items
+.cartItemContainer {
+  max-height: 50vh;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+// Individual cart item
+.cartItem {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+// Image container
+.imgContainer {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.itemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+// Item details container
+.itemDetails {
+  flex: 1;
+}
+
+.itemTitle {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.itemPrice {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 10px;
+}
+
+.discountedPrice {
+  font-weight: 600;
+  color: #000;
+}
+
+// Item metadata (size, quantity)
+.itemMeta {
+  font-size: 12px;
+  color: #666;
+
+  p {
+    margin: 3px 0;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+// Cart footer
+.cartFooter {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+// Subtotal section
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .label {
+    display: flex;
+    align-items: center;
+
+    .labelText {
+      font-weight: 600;
+      margin-right: 5px;
+    }
+  }
+}
+
+// Checkout button
+.checkoutLink {
+  background-color: #006400;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #004d00;
+  }
+}
+
+// View bag button
+.viewBagButton {
+  width: 100%;
+  background-color: green;
+  // background-color: #049d04;
+  border: 1px solid #006400;
+  border-radius: 15px;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: green;
+  }
+}
+
+// Cart icon and item summary styling (based on the image)
+.cartSummary {
+  display: flex;
+  align-items: center;
+
+  .cartIcon {
+    color: #006400;
+    margin-right: 15px;
+    background-color: red;
+    z-index: 99999999;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .summaryInfo {
+    display: flex;
+    flex-direction: column;
+
+    .itemCount {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .priceInfo {
+      display: flex;
+      align-items: center;
+
+      .currentPrice {
+        font-size: 28px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .originalPrice {
+        font-size: 20px;
+        color: #666;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+// Add to Cart button (based on the image)
+.addToCartButton {
+  background-color: #006400;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #004d00;
+  }
+}
+
+// Media queries for responsiveness
+@media (max-width: 768px) {
+  .cartModal {
+    width: 95%;
+    max-width: none;
+  }
+
+  .imgContainer {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+// This class is specifically for the cart-item-summary layout shown in your image
+.itemSummaryWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+
+  .leftSection {
+    display: flex;
+    align-items: center;
+
+    .cartIcon {
+      color: #006400;
+      margin-right: 15px;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .summaryText {
+      .itemCount {
+        font-size: 16px;
+        font-weight: normal;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .priceDisplay {
+        display: flex;
+        align-items: baseline;
+
+        .currentPrice {
+          font-size: 24px;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+
+        .originalPrice {
+          font-size: 16px;
+          color: #666;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+
+  .addToCartBtn {
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #004d00;
+    }
+  }
+}
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+  z-index: 10;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #000;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}

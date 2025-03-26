@@ -42,6 +42,7 @@ function Header({ fpi }) {
   const [searchParams] = useSearchParams();
   const location = useLocation();
 
+  const collection = location.pathname.includes("/collection/sample");
   const buyNow = searchParams?.get("buy_now") || false;
 
   const checkHeaderHeight = throttle(() => {
@@ -153,6 +154,81 @@ function Header({ fpi }) {
     handleCurrentLocClick,
     handlePincodeSubmit,
   } = useHyperlocal(fpi);
+
+  if (collection) {
+    return (
+      <div
+        className={`${styles.ctHeaderWrapper} fontBody`}
+        style={{ borderBottom: "1px solid #7171711c" }}
+      >
+        <header className={styles.header} ref={headerRef}>
+          <div
+            className={`${styles.headerContainer} basePageContainer margin0auto`}
+          >
+            <div
+              className={`${styles.mobile} ${styles.flexAlignCenter} ${styles.pizzaHeader}`}
+            >
+              <div className={`${styles.flexAlignCenter}`}>
+                <button
+                  className={styles.backButton}
+                  onClick={() => navigate(-1)}
+                  aria-label="Go back"
+                >
+                  <svg
+                    width="30"
+                    height="35"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 6L9 12L15 18"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+                <h1 className={styles.pizzaTitle}>Select your Pizza</h1>
+              </div>
+              <button
+                className={styles.searchButton}
+                onClick={() => {
+                  // Trigger search functionality
+                  resetSidebarNav();
+                }}
+                aria-label="Search"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M21 21L16.65 16.65"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+      </div>
+    );
+  }
 
   return (
     <>

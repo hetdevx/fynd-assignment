@@ -255,11 +255,11 @@ function I18Dropdown({ fpi }) {
       })
       .then((res) => {
         if (res?.data?.locality) {
-          console.log(res?.data?.locality);
+          // console.log(res?.data?.locality);
         } else {
-          console.log(
-            res?.errors?.[0]?.message || "Pincode verification failed"
-          );
+          // console.log(
+          //   res?.errors?.[0]?.message || "Pincode verification failed"
+          // );
         }
       });
   };

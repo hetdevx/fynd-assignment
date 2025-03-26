@@ -11,6 +11,8 @@ import EmptyState from "../components/empty-state/empty-state";
 import InfiniteLoader from "../components/infinite-loader/infinite-loader";
 import ScrollToTop from "../components/scroll-to-top/scroll-to-top";
 import { COLLECTIONS } from "../queries/collectionsQuery";
+import DeliveryTabs from "../components/delivery-tabs/delivery-tabs";
+import SectionHeader from "../components/section-header/section-header";
 
 function Collections({ fpi }) {
   const {
@@ -33,6 +35,8 @@ function Collections({ fpi }) {
     <div
       className={`${styles.collections} basePageContainer margin0auto fontBody`}
     >
+      <DeliveryTabs />
+      <SectionHeader title={"Season Special"} />
       {isLoading && !collections?.length ? (
         <Loader />
       ) : (

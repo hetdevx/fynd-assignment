@@ -1,0 +1,1179 @@
+@import "../../../../styles/main.less";
+
+.productDescContainer {
+  display: flex;
+  box-sizing: border-box;
+
+  @media @desktop {
+    width: 80vw;
+    max-width: 1200px;
+  }
+
+  .loader {
+    position: relative;
+    height: 500px;
+    width: 80vw;
+
+    @media @tablet {
+      height: 360px;
+      width: 100%;
+    }
+
+    .loaderContainer {
+      position: absolute;
+      height: 100%;
+      background: transparent;
+
+      .customLoader {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .left {
+    padding: 24px 16px;
+    align-self: center;
+
+    @media @tablet {
+      display: none;
+    }
+
+    width: 52%;
+  }
+  .right {
+    width: 48%;
+    box-sizing: border-box;
+    position: relative;
+    @media @tablet {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .preview {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    .productInfo {
+      .product {
+        padding: 24px 24px 0px 24px;
+        @media @tablet {
+          padding: 16px;
+        }
+
+        &__title {
+          margin-bottom: 4px;
+          word-wrap: break-word;
+          letter-spacing: -0.02em;
+          overflow: hidden;
+          color: @TextHeading;
+          text-overflow: ellipsis;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: normal;
+          width: 90%;
+
+          @media @tablet {
+            display: none;
+          }
+        }
+
+        &__brand {
+          color: @TextHeading;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 16px;
+
+          @media @tablet {
+            margin-bottom: 8px;
+          }
+        }
+
+        .taxLabel {
+          color: @TextSecondary;
+          margin-bottom: 16px;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.24px;
+        }
+
+        .reviewRatingContainer {
+          background-color: @ThemeAccentL4;
+          border-radius: 4px;
+          display: flex;
+          width: fit-content;
+          align-items: center;
+          padding: 4.5px 10px;
+          margin: 16px 0 24px;
+
+          @media @tablet {
+            margin: 24px 0;
+          }
+
+          .ratingWrapper {
+            display: flex;
+            align-items: center;
+
+            .ratingIcon {
+              width: 14px;
+              height: 14px;
+              margin-left: 4px;
+
+              /deep/ svg path {
+                fill: @ThemeAccentD2;
+              }
+            }
+          }
+
+          .separator {
+            border-left: 1px solid @DividerStokes;
+            height: 100%;
+            margin: 0 6px;
+            width: 1px;
+          }
+
+          .reviewWrapper {
+            color: @TextLabel;
+          }
+        }
+        &__price {
+          font-size: 16px;
+          margin-bottom: 2px;
+          display: flex;
+          align-items: center;
+
+          &--effective {
+            color: @TextHeading;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.32px;
+
+            @media @tablet {
+              font-size: 14px;
+              letter-spacing: -0.28px;
+            }
+          }
+
+          &--marked {
+            margin-left: 0.25rem;
+            color: @TextLabel;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.24px;
+            text-decoration: line-through;
+          }
+
+          &--discount {
+            margin-left: 8px;
+            color: @SaleDiscountText;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.24px;
+          }
+        }
+
+        &__size {
+          &--guide {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: -0.28px;
+            padding: 0;
+            height: auto;
+            cursor: pointer;
+
+            @media @tablet {
+              font-size: 12px;
+            }
+
+            .scaleIcon {
+              width: 25px;
+              height: 12px;
+            }
+          }
+        }
+
+        .sizeError {
+          margin-top: 8px;
+          color: @ErrorText;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.24px;
+        }
+
+        .viewMore {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: -0.28px;
+          text-transform: uppercase;
+          margin-top: 24px;
+
+          @media @tablet {
+            margin-top: 16px;
+            font-size: 12px;
+            letter-spacing: -0.24px;
+          }
+
+          span {
+            cursor: pointer;
+          }
+        }
+
+        .crossIcon {
+          position: absolute;
+          top: 16px;
+          right: 16px;
+          cursor: pointer;
+
+          @media @tablet {
+            display: none;
+          }
+        }
+      }
+      .actionButtons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        position: sticky;
+        bottom: 0;
+        padding: 16px 24px;
+        z-index: 9;
+        background-color: @DialogBackground;
+
+        @media @tablet {
+          padding: 16px;
+        }
+
+        .buyNow {
+          border: 0.8px solid @ButtonPrimary;
+        }
+
+        button {
+          flex: 1;
+
+          @media @tablet {
+            height: 40px;
+            padding: 12px 16px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sizeCartContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+
+  @media @tablet {
+    margin-top: 16px;
+  }
+
+  .sizeWrapper {
+    position: relative;
+    min-width: 0;
+    flex-grow: 0;
+    transition: all 0.5s;
+
+    @media @tablet {
+      margin-right: 8px;
+    }
+
+    .sizeButton {
+      padding: 11px 16px;
+      border: 0.8px solid @DividerStokes;
+      border-radius: @ButtonRadius;
+      background-color: @White;
+      width: 100%;
+      height: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: @TextHeading;
+
+      @media @tablet {
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      .selectedSize {
+        text-align: left;
+        color: @TextHeading;
+        border-radius: unset;
+        .text-line-clamp();
+      }
+
+      .dropdownArrow {
+        height: 24px;
+        width: 24px;
+        flex: 0 0 24px;
+      }
+
+      .rotateArrow {
+        transform: rotate(180deg);
+      }
+    }
+    .disabledButton {
+      color: @TextDisabled;
+    }
+    .sizeDropdown {
+      position: absolute;
+      background-color: @DialogBackground;
+      top: 100%;
+      min-width: 100%;
+      white-space: nowrap;
+      border: 1px solid #d4d1d1;
+      box-shadow:
+        0px 4px 4px rgba(0, 0, 0, 0.15),
+        0px 12px 16px rgba(0, 0, 0, 0.16);
+      border-radius: @ButtonRadius;
+      padding: 0.5rem;
+      z-index: 10;
+
+      li {
+        padding: 8px 12px;
+        border-radius: 4px;
+      }
+
+      .selected_size {
+        background-color: @ThemeAccentL3;
+      }
+
+      .disabled_size {
+        text-decoration-line: line-through;
+        color: @TextDisabled;
+      }
+
+      .selectable_size {
+        cursor: pointer;
+
+        &:hover {
+          background-color: @ThemeAccentL3;
+        }
+      }
+    }
+  }
+}
+
+.short-description {
+  margin: 24px 0;
+}
+
+.sizeSelection {
+  margin-top: 24px;
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.5s;
+
+  @media @tablet {
+    margin-top: 16px;
+  }
+
+  .sizeHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  & > div {
+    overflow: hidden;
+  }
+  &__label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    color: @TextLabel;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .grid-gap(8px);
+  }
+
+  &__block {
+    border-radius: @ButtonRadius;
+    border: 1px solid @DividerStokes;
+    padding: 6px 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+
+    &--selected {
+      background-color: @ThemeAccent;
+    }
+
+    &--selectable {
+      cursor: pointer;
+    }
+
+    &--disable {
+      cursor: default;
+      color: @TextDisabled;
+    }
+
+    svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      line {
+        stroke: @DividerStokes;
+        stroke-width: 1;
+      }
+    }
+  }
+}
+@import "../../../../styles/main.less";
+
+.productDescContainer {
+  display: flex;
+  box-sizing: border-box;
+
+  @media @desktop {
+    width: 80vw;
+    max-width: 1200px;
+  }
+
+  .loader {
+    position: relative;
+    height: 500px;
+    width: 80vw;
+
+    @media @tablet {
+      height: 360px;
+      width: 100%;
+    }
+
+    .loaderContainer {
+      position: absolute;
+      height: 100%;
+      background: transparent;
+
+      .customLoader {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .left {
+    padding: 24px 16px;
+    align-self: center;
+
+    @media @tablet {
+      display: none;
+    }
+
+    width: 52%;
+  }
+  .right {
+    width: 48%;
+    box-sizing: border-box;
+    position: relative;
+    @media @tablet {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .preview {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    .productInfo {
+      .product {
+        padding: 24px 24px 0px 24px;
+        @media @tablet {
+          padding: 16px;
+        }
+
+        &__title {
+          margin-bottom: 4px;
+          word-wrap: break-word;
+          letter-spacing: -0.02em;
+          overflow: hidden;
+          color: @TextHeading;
+          text-overflow: ellipsis;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: normal;
+          width: 90%;
+
+          @media @tablet {
+            display: none;
+          }
+        }
+
+        &__brand {
+          color: @TextHeading;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 16px;
+
+          @media @tablet {
+            margin-bottom: 8px;
+          }
+        }
+
+        .taxLabel {
+          color: @TextSecondary;
+          margin-bottom: 16px;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.24px;
+        }
+
+        .reviewRatingContainer {
+          background-color: @ThemeAccentL4;
+          border-radius: 4px;
+          display: flex;
+          width: fit-content;
+          align-items: center;
+          padding: 4.5px 10px;
+          margin: 16px 0 24px;
+
+          @media @tablet {
+            margin: 24px 0;
+          }
+
+          .ratingWrapper {
+            display: flex;
+            align-items: center;
+
+            .ratingIcon {
+              width: 14px;
+              height: 14px;
+              margin-left: 4px;
+
+              /deep/ svg path {
+                fill: @ThemeAccentD2;
+              }
+            }
+          }
+
+          .separator {
+            border-left: 1px solid @DividerStokes;
+            height: 100%;
+            margin: 0 6px;
+            width: 1px;
+          }
+
+          .reviewWrapper {
+            color: @TextLabel;
+          }
+        }
+        &__price {
+          font-size: 16px;
+          margin-bottom: 2px;
+          display: flex;
+          align-items: center;
+
+          &--effective {
+            color: @TextHeading;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.32px;
+
+            @media @tablet {
+              font-size: 14px;
+              letter-spacing: -0.28px;
+            }
+          }
+
+          &--marked {
+            margin-left: 0.25rem;
+            color: @TextLabel;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.24px;
+            text-decoration: line-through;
+          }
+
+          &--discount {
+            margin-left: 8px;
+            color: @SaleDiscountText;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.24px;
+          }
+        }
+
+        &__size {
+          &--guide {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: -0.28px;
+            padding: 0;
+            height: auto;
+            cursor: pointer;
+
+            @media @tablet {
+              font-size: 12px;
+            }
+
+            .scaleIcon {
+              width: 25px;
+              height: 12px;
+            }
+          }
+        }
+
+        .sizeError {
+          margin-top: 8px;
+          color: @ErrorText;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.24px;
+        }
+
+        .viewMore {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: -0.28px;
+          text-transform: uppercase;
+          margin-top: 24px;
+
+          @media @tablet {
+            margin-top: 16px;
+            font-size: 12px;
+            letter-spacing: -0.24px;
+          }
+
+          span {
+            cursor: pointer;
+          }
+        }
+
+        .crossIcon {
+          position: absolute;
+          top: 16px;
+          right: 16px;
+          cursor: pointer;
+
+          @media @tablet {
+            display: none;
+          }
+        }
+      }
+      .actionButtons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        position: sticky;
+        bottom: 0;
+        padding: 16px 24px;
+        z-index: 9;
+        background-color: @DialogBackground;
+
+        @media @tablet {
+          padding: 16px;
+        }
+
+        .buyNow {
+          border: 0.8px solid @ButtonPrimary;
+        }
+
+        button {
+          flex: 1;
+
+          @media @tablet {
+            height: 40px;
+            padding: 12px 16px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sizeCartContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+
+  @media @tablet {
+    margin-top: 16px;
+  }
+
+  .sizeWrapper {
+    position: relative;
+    min-width: 0;
+    flex-grow: 0;
+    transition: all 0.5s;
+
+    @media @tablet {
+      margin-right: 8px;
+    }
+
+    .sizeButton {
+      padding: 11px 16px;
+      border: 0.8px solid @DividerStokes;
+      border-radius: @ButtonRadius;
+      background-color: @White;
+      width: 100%;
+      height: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: @TextHeading;
+
+      @media @tablet {
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      .selectedSize {
+        text-align: left;
+        color: @TextHeading;
+        border-radius: unset;
+        .text-line-clamp();
+      }
+
+      .dropdownArrow {
+        height: 24px;
+        width: 24px;
+        flex: 0 0 24px;
+      }
+
+      .rotateArrow {
+        transform: rotate(180deg);
+      }
+    }
+    .disabledButton {
+      color: @TextDisabled;
+    }
+    .sizeDropdown {
+      position: absolute;
+      background-color: @DialogBackground;
+      top: 100%;
+      min-width: 100%;
+      white-space: nowrap;
+      border: 1px solid #d4d1d1;
+      box-shadow:
+        0px 4px 4px rgba(0, 0, 0, 0.15),
+        0px 12px 16px rgba(0, 0, 0, 0.16);
+      border-radius: @ButtonRadius;
+      padding: 0.5rem;
+      z-index: 10;
+
+      li {
+        padding: 8px 12px;
+        border-radius: 4px;
+      }
+
+      .selected_size {
+        background-color: @ThemeAccentL3;
+      }
+
+      .disabled_size {
+        text-decoration-line: line-through;
+        color: @TextDisabled;
+      }
+
+      .selectable_size {
+        cursor: pointer;
+
+        &:hover {
+          background-color: @ThemeAccentL3;
+        }
+      }
+    }
+  }
+}
+
+.short-description {
+  margin: 24px 0;
+}
+
+.sizeSelection {
+  margin-top: 24px;
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.5s;
+
+  @media @tablet {
+    margin-top: 16px;
+  }
+
+  .sizeHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  & > div {
+    overflow: hidden;
+  }
+  &__label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    color: @TextLabel;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .grid-gap(8px);
+  }
+
+  &__block {
+    border-radius: @ButtonRadius;
+    border: 1px solid @DividerStokes;
+    padding: 6px 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+
+    &--selected {
+      background-color: @ThemeAccent;
+    }
+
+    &--selectable {
+      cursor: pointer;
+    }
+
+    &--disable {
+      cursor: default;
+      color: @TextDisabled;
+    }
+
+    svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      line {
+        stroke: @DividerStokes;
+        stroke-width: 1;
+      }
+    }
+  }
+}
+
+.addToCartBtn {
+  background-color: green;
+  color: white;
+  border: 0px solid;
+  border-radius: 15px;
+}
+
+/* ---------- Beautified Product Price Styles ---------- */
+.productPriceContainer {
+  margin-bottom: 16px;
+}
+
+.product__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+
+  .priceWrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  &--effective {
+    color: @TextHeading;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: -0.32px;
+    transition: all 0.2s ease;
+
+    @media @tablet {
+      font-size: 18px;
+    }
+  }
+
+  &--marked {
+    color: @TextLabel;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    text-decoration: line-through;
+  }
+
+  &--discount {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.24px;
+  }
+}
+
+.taxLabel {
+  color: @TextSecondary;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  margin-top: -4px;
+}
+
+/* ---------- Beautified Size Dropdown Styles ---------- */
+.sizeCartContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  gap: 16px;
+
+  @media @tablet {
+    margin-top: 16px;
+    gap: 8px;
+  }
+}
+
+.sizeDropdownWrapper {
+  position: relative;
+  flex-grow: 1;
+  min-width: 0;
+  transition: all 0.3s ease;
+
+  .sizeDropdownButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border: 1px solid @DividerStokes;
+    border-radius: 8px;
+    background-color: @White;
+    width: 100%;
+    height: 44px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: @TextHeading;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+
+    &:hover {
+      border-color: @ThemeAccent;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    @media @tablet {
+      font-size: 12px;
+      line-height: 14px;
+      height: 40px;
+    }
+
+    .dropdownLabel {
+      text-align: left;
+      color: @TextHeading;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin: 0;
+    }
+
+    .arrowIconWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease;
+    }
+
+    .dropdownArrow {
+      height: 24px;
+      width: 24px;
+      transition: transform 0.3s ease;
+    }
+
+    .rotateArrow {
+      transform: rotate(180deg);
+    }
+  }
+
+  .disabledButton {
+    color: @TextDisabled;
+    background-color: rgba(0, 0, 0, 0.02);
+    cursor: not-allowed;
+
+    &:hover {
+      border-color: @DividerStokes;
+      box-shadow: none;
+    }
+  }
+
+  .sizeDropdownList {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    width: 100%;
+    background-color: @DialogBackground;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    padding: 8px;
+    z-index: 20;
+    max-height: 240px;
+    overflow-y: auto;
+    animation: fadeIn 0.2s ease-in-out;
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .sizeOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 2px;
+    transition: background-color 0.2s ease;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .sizeOptionSelected {
+    background-color: @ThemeAccentL3;
+    font-weight: 600;
+  }
+
+  .sizeOptionDisabled {
+    color: @TextDisabled;
+    cursor: not-allowed;
+
+    .outOfStock {
+      font-size: 12px;
+      color: #e74c3c;
+    }
+  }
+
+  .sizeOptionSelectable {
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+  }
+}
+
+.sizeGuideButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  padding: 0;
+  height: auto;
+  cursor: pointer;
+  white-space: nowrap;
+  color: @ThemeAccent;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: @ThemeAccent;
+  }
+
+  @media @tablet {
+    font-size: 12px;
+  }
+
+  .scaleIcon {
+    width: 20px;
+    height: 12px;
+  }
+}
+
+/* ---------- ADD TO CART Button Style ---------- */
+.addToCartBtn {
+  background: green;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: green;
+    box-shadow: 0 6px 12px rgba(46, 204, 113, 0.3);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(46, 204, 113, 0.2);
+  }
+}

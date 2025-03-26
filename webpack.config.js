@@ -8,18 +8,19 @@ const NodeJSPolyfill = require("./plugin");
 const polyfillCodePath = path.join(__dirname, "./polyfill.js");
 const polyfillCode = readFileSync(polyfillCodePath, { encoding: "utf-8" });
 
-module.exports = (configOptions) => {
+module.exports = (configOptions = {}) => {
   const {
-    isLocal,
-    isHMREnabled,
-    context,
-    assetNormalizedBasePath,
-    localBasePath,
-    imageCDNNormalizedBasePath,
-    buildPath,
-    localImageBasePath,
-    localFontsBasePath,
+    isLocal = false,
+    isHMREnabled = false,
+    context = __dirname, // Default to current directory
+    assetNormalizedBasePath = "/assets/",
+    localBasePath = "/local/",
+    imageCDNNormalizedBasePath = "/cdn/images/",
+    buildPath = "dist",
+    localImageBasePath = "/local/images/",
+    localFontsBasePath = "/local/fonts/",
   } = configOptions;
+  // console.log("Received configOptions:", configOptions);
   return {
     entry: {
       themeBundle: [path.resolve(context, "theme/index.jsx")],

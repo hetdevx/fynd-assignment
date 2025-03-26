@@ -716,6 +716,7 @@ function ProductDescriptionPdp({ fpi, slug }) {
       {button_options?.includes("addtocart") &&
         !disable_cart &&
         productMeta?.sellable && (
+          
           <StickyAddToCart
             addToCartBtnRef={addToCartBtnRef}
             productMeta={productMeta}

@@ -108,58 +108,97 @@ function Card({ card, cardType, globalConfig }) {
               {renderPromotionCard()}
             </div>
           ) : (
-            <FDKLink className={styles.displayBlock} to={getUrl()}>
-              <FyImage
-                src={getImageURL()}
-                aspectRatio="0.8"
-                mobileAspectRatio="0.8"
-                customClass={styles.cardImg}
-                sources={[
-                  { breakpoint: { min: 768 }, width: 800 },
-                  { breakpoint: { max: 767 }, width: 700 },
-                ]}
-                placeholder={placeholder3X4}
-                globalConfig={globalConfig}
-              />
-              <div
-                className={`${styles.cardDesc} ${styles.flexAlignCenter} ${
-                  (cardType === "COLLECTIONS" || cardType === "CATEGORIES") &&
-                  styles.emergeCenter
-                } ${cardType === "BRANDS" && styles.BRANDS}`}
-              >
-                {cardType === "BRANDS" && (
-                  <>
-                    <div className={styles.cardLogo}>
-                      <FyImage
-                        customClass={styles.imgWrapper}
-                        src={getCardLogo()}
-                        aspectRatio="1"
-                        mobileAspectRatio="1"
-                        placeholder={placeholder1X1}
-                        sources={[
-                          {
-                            breakpoint: { max: 500 },
-                            width: 50,
-                          },
-                          { width: 40 },
-                        ]}
-                      />
-                    </div>
-                    <div>
-                      <h5 className={styles.title}>{card.name}</h5>
-                      <p className={styles.subTitle}>{card.description}</p>
-                    </div>
-                  </>
-                )}
-                <h5
-                  className={`${styles.title} ${
-                    cardType === "BRANDS" && styles.b1
-                  }`}
+            <>
+              <FDKLink className={styles.displayBlock} to={getUrl()}>
+                <div className={styles.dealContainer}>
+                  <div className={styles.imageDiv}>
+                    {/* <FyImage
+                    src={getImageURL()}
+                    aspectRatio="0.8"
+                    mobileAspectRatio="0.8"
+                    customClass={styles.cardImg}
+                    sources={[
+                      { breakpoint: { min: 768 }, width: 800 },
+                      { breakpoint: { max: 767 }, width: 700 },
+                    ]}
+                    placeholder={placeholder3X4}
+                    globalConfig={globalConfig}
+                  /> */}
+                    <img
+                      src={getImageURL()}
+                      alt=""
+                      className={styles.innerImageDiv}
+                    />
+                  </div>
+                  <div className={styles.detailsDiv}>
+                    <p className={styles.dealTitle}>Ramadan Deal 4 Pax Combo</p>
+                    <p className={styles.dealDescription}>
+                      2 Regular Pizza + 1 Side + 1 Bottle of Drink
+                    </p>
+
+                    <div className={styles.priceContainer}></div>
+                    <span className={styles.fromText}>FROM</span>
+                    <span className={styles.price}>RM 39.60</span>
+                    <span className={styles.originalPrice}>RM 85.39</span>
+                    <br />
+                    <button className={styles.selectButton}>Select</button>
+                  </div>
+                </div>
+              </FDKLink>
+
+              {/* <FDKLink className={styles.displayBlock} to={getUrl()}>
+                <FyImage
+                  src={getImageURL()}
+                  aspectRatio="0.8"
+                  mobileAspectRatio="0.8"
+                  customClass={styles.cardImg}
+                  sources={[
+                    { breakpoint: { min: 768 }, width: 800 },
+                    { breakpoint: { max: 767 }, width: 700 },
+                  ]}
+                  placeholder={placeholder3X4}
+                  globalConfig={globalConfig}
+                />
+                <div
+                  className={`${styles.cardDesc} ${styles.flexAlignCenter} ${
+                    (cardType === "COLLECTIONS" || cardType === "CATEGORIES") &&
+                    styles.emergeCenter
+                  } ${cardType === "BRANDS" && styles.BRANDS}`}
                 >
-                  {card.name}
-                </h5>
-              </div>
-            </FDKLink>
+                  {cardType === "BRANDS" && (
+                    <>
+                      <div className={styles.cardLogo}>
+                        <FyImage
+                          customClass={styles.imgWrapper}
+                          src={getCardLogo()}
+                          aspectRatio="1"
+                          mobileAspectRatio="1"
+                          placeholder={placeholder1X1}
+                          sources={[
+                            {
+                              breakpoint: { max: 500 },
+                              width: 50,
+                            },
+                            { width: 40 },
+                          ]}
+                        />
+                      </div>
+                      <div>
+                        <h5 className={styles.title}>{card.name}</h5>
+                        <p className={styles.subTitle}>{card.description}</p>
+                      </div>
+                    </>
+                  )}
+                  <h5
+                    className={`${styles.title} ${
+                      cardType === "BRANDS" && styles.b1
+                    }`}
+                  >
+                    {card.name}
+                  </h5>
+                </div>
+              </FDKLink> */}
+            </>
           )}
         </div>
       )}

@@ -35,6 +35,7 @@ import "@gofynd/theme-template/components/quantity-control/quantity-control.css"
 import useCart from "../page-layouts/cart/useCart";
 import PageNotFound from "../components/page-not-found/page-not-found";
 import { createPortal } from "react-dom";
+import { block } from "marked";
 
 export function Component({ props = {}, globalConfig = {}, blocks = [] }) {
   const fpi = useFPI();
@@ -121,6 +122,8 @@ export function Component({ props = {}, globalConfig = {}, blocks = [] }) {
     maxCartQuantity,
     minCartQuantity,
   } = useProductDescription(fpi, slug, props, blockProps);
+
+  console.log(props, "asmfkdfbmksdfmkgmk", blockProps);
 
   const { onUpdateCartItems, isCartUpdating, cartItems } = useCart(fpi);
 

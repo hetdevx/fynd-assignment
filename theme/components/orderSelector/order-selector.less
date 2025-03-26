@@ -1,0 +1,41 @@
+.order-type-selector {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 6px;
+  width: 100%;
+  max-width: 600px;
+
+  .option-button {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: #5c5c5c;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover:not(.selected) {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &.selected {
+      background-color: #cc0014;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+// Media query for mobile devices
+@media (max-width: 480px) {
+  .order-type-selector {
+    .option-button {
+      padding: 10px 8px;
+      font-size: 14px;
+    }
+  }
+}

@@ -82,7 +82,7 @@ const StickyAddToCart = ({
               onClick={openSizeModal}
             >
               <SvgWrapper svgSrc="cart" className={styles.cartIcon} />
-              ADD TO CART
+              ADD TO CART HELLLOOOO
             </button>
           </motion.div>
         )}
