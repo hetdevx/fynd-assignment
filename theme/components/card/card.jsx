@@ -131,6 +131,48 @@ function Card({ card, cardType, globalConfig }) {
                     />
                   </div>
                   <div className={styles.detailsDiv}>
+                    <div className={styles.promotionCardContent}>
+                      <div className={styles.promotionHeader}>
+                        {card.tagline && (
+                          <div className={styles.promotionTag}>
+                            {card.tagline}
+                          </div>
+                        )}
+                        <h3 className={styles.promotionTitle}>{card.name}</h3>
+                        <p className={styles.promotionSubtitle}>
+                          {card.description}
+                        </p>
+                      </div>
+
+                      <div className={styles.promotionPricing}>
+                        {card.originalPrice && (
+                          <span className={styles.originalPrice}>
+                            {card.originalPrice}
+                          </span>
+                        )}
+                        <div className={styles.pricingContainer}>
+                          {card.pricingPrefix && (
+                            <span className={styles.pricingPrefix}>
+                              {card.pricingPrefix}
+                            </span>
+                          )}
+                          <span className={styles.currentPrice}>
+                            {card.currentPrice}
+                          </span>
+                        </div>
+                      </div>
+                      <div className={styles.paddingTop}>
+                        <span className={styles.fromText}>FROM</span>
+                        <span className={styles.price}>RM 39.60</span>
+                        <span className={styles.originalPrice}>RM 85.39</span>
+                      </div>
+
+                      <button className={styles.selectButton}>
+                        {card.buttonText || "Select"}
+                      </button>
+                    </div>
+                  </div>
+                  {/* <div className={styles.detailsDiv}>
                     <p className={styles.dealTitle}>Ramadan Deal 4 Pax Combo</p>
                     <p className={styles.dealDescription}>
                       2 Regular Pizza + 1 Side + 1 Bottle of Drink
@@ -142,7 +184,7 @@ function Card({ card, cardType, globalConfig }) {
                     <span className={styles.originalPrice}>RM 85.39</span>
                     <br />
                     <button className={styles.selectButton}>Select</button>
-                  </div>
+                  </div> */}
                 </div>
               </FDKLink>
 
